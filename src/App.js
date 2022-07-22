@@ -5,8 +5,6 @@ function App() {
 
   const [number, setNumber] = useState()
 
-  // const [time, setTime] = useState(Date.now());
-
   function newNumber() {
     const newNumber = Math.floor(Math.random() * 100)
     console.log(newNumber)
@@ -30,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src="/public/peluca.gif"/>
         <h1>{number}</h1>
         <button onClick={handleClick}>SAPE</button>
       </header>
